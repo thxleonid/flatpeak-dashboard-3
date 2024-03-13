@@ -1,4 +1,6 @@
 import Header from "./components/header";
+import Signup from "./components/signup";
+import Signin from "./components/signin";
 
 const accounts = [
   {icon: '', label: 'Timeshift', email: 'timeshift@gmail.com'}, 
@@ -9,10 +11,10 @@ const accounts = [
 
 export default function MyApp() {
   return (
-    <>
+    <div>
       <Header accounts={accounts}/>
-      <h1>Welcome to my app</h1>
-    </>
+      <Signin />
+    </div>
   );
 }
 
